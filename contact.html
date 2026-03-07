@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Vantage Adventures - Free Tailwind Template</title>
+    <meta content="Download this free Tailwind CSS Travel website template for Vantage Adventures. Features a biophilic motion design, fully responsive layout, and includes 10 pre-built pages like index.html, calendar.html, about.html." name="description"/>
+    <meta content="free vantage adventures website template, vantage adventures website landing page, tailwind css vantage adventures website theme, responsive vantage adventures website design, biophilic motion vantage adventures website" name="keywords"/>
+    <meta content="Vantage Adventures - Free Tailwind Template" property="og:title"/>
+    <meta content="Download this free Tailwind CSS Travel website template for Vantage Adventures. Features a biophilic motion design, fully responsive layout, and includes 10 pre-built pages like index.html, calendar.html, about.html." property="og:description"/>
+    <meta content="website" property="og:type"/>
+    <meta content="https://freestacktemplates.io/og-previews/vantage_adventures-travel-biophilic_motion-template/index-og.jpg" property="og:image"/>
+    <meta content="https://freestacktemplates.io/tailwind/vantage_adventures-travel-biophilic_motion-template" property="og:url"/>
+    <meta content="summary_large_image" name="twitter:card"/>
+    <meta content="Vantage Adventures - Free Tailwind Template" name="twitter:title"/>
+    <meta content="Download this free Tailwind CSS Travel website template for Vantage Adventures. Features a biophilic motion design, fully responsive layout, and includes 10 pre-built pages like index.html, calendar.html, about.html." name="twitter:description"/>
+    <meta content="https://freestacktemplates.io/og-previews/vantage_adventures-travel-biophilic_motion-template/index-og.jpg" name="twitter:image"/>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="tailwind.config.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"/>
+    <script defer="" src="https://cdn.jsdelivr.net/npm/alpinejs@3.14.8/dist/cdn.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="style.css" rel="stylesheet"/>
+    <script defer="" src="scripts.js"></script>
+  </head>
+  <body class="font-body">
+    <header>
+      <nav class="fixed w-full z-50 transition-all duration-300 bg-transparent" @scroll.window="scrolled = (window.pageYOffset > 20)" x-data="{ scrolled: false, mobileMenu: false }">
+        <div class="max-w-7xl mx-auto px-6 py-4">
+          <div class="flex justify-between items-center bg-white/90 backdrop-blur-md rounded-full px-8 py-3 shadow-lg border border-white/20">
+
+            <!-- Logo -->
+            <a class="flex items-center space-x-2 group" href="index.html">
+              <div class="w-10 h-10 bg-accent rounded-lg flex items-center justify-center transform group-hover:rotate-12 transition-transform">
+                <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+                  <path d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+                </svg>
+              </div>
+              <span class="font-['Montserrat'] text-2xl font-bold tracking-tighter text-primary">VANTAGE</span>
+            </a>
+
+            <!-- Desktop Nav -->
+
+            <!-- Desktop Menu -->
+            <div class="hidden lg:flex items-center space-x-8">
+              <a class="text-sm font-bold text-primary hover:text-accent transition-colors" href="tours.html">TOURS</a>
+              <a class="text-sm font-bold text-primary hover:text-accent transition-colors" href="destinations.html">DESTINATIONS</a>
+              <a class="text-sm font-bold text-primary hover:text-accent transition-colors" href="guides.html">GUIDES</a>
+              <a class="text-sm font-bold text-primary hover:text-accent transition-colors" href="gallery.html">GALLERY</a>
+              <a class="text-sm font-bold text-primary hover:text-accent transition-colors" href="safety.html">SAFETY</a>
+              <a class="text-sm font-bold text-primary hover:text-accent transition-colors" href="calendar.html">CALENDAR</a>
+            </div>
+
+            <!-- CTA -->
+            <div class="hidden lg:block">
+              <a class="bg-accent text-white px-6 py-2.5 rounded-full font-bold text-sm hover:bg-[#e5533d] transition-all shadow-md hover:shadow-xl" href="tours.html">BOOK ADVENTURE</a>
+            </div>
+
+            <!-- Mobile Toggle -->
+            <button class="lg:hidden text-primary" @click="mobileMenu = !mobileMenu">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+                <path d="M4 6h16M4 12h16m-7 6h7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div class="lg:hidden fixed inset-0 bg-white z-50 p-8" x-show="mobileMenu" x-transition="">
+          <div class="flex justify-between items-center mb-12">
+            <span class="font-['Montserrat'] text-2xl font-bold text-primary">VANTAGE</span>
+            <button class="text-primary" @click="mobileMenu = false">
+              <svg class="w-8 h-8" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+                <path d="M6 18L18 6M6 6l12 12" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+              </svg>
+            </button>
+          </div>
+          <div class="flex flex-col space-y-6 text-center">
+            <a class="text-2xl font-bold text-primary" href="tours.html">TOURS</a>
+            <a class="text-2xl font-bold text-primary" href="destinations.html">DESTINATIONS</a>
+            <a class="text-2xl font-bold text-primary" href="guides.html">GUIDES</a>
+            <a class="text-2xl font-bold text-primary" href="gallery.html">GALLERY</a>
+            <a class="text-2xl font-bold text-primary" href="safety.html">SAFETY</a>
+            <a class="text-2xl font-bold text-primary" href="calendar.html">CALENDAR</a>
+            <a class="bg-accent text-white py-4 rounded-2xl font-bold text-xl hidden lg:block" href="tours.html">
+              BOOK
+              NOW
+</a>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Get In Touch -->
+    <section id="get_in_touch" class="pt-40 pb-20 bg-primary text-white relative overflow-hidden">
+      <div class="max-w-7xl mx-auto px-6 relative z-10">
+        <h1 class="text-6xl font-extrabold mb-6" data-aos="fade-up">GET IN
+          <span class="text-orange">TOUCH</span>
+        </h1>
+        <p class="text-xl text-white/70 max-w-2xl" data-aos="fade-up" data-aos-delay="100">
+          Ready to answer the call? Our expedition experts are standing by to help you plan your next great escape.
+        </p>
+      </div>
+    </section>
+
+    <!-- Send A Message -->
+    <section id="send_a_message" class="py-24 px-6">
+      <div class="max-w-7xl mx-auto grid lg:grid-cols-2 gap-20">
+
+        <!-- Form -->
+        <div class="bg-white p-12 rounded-[60px] shadow-xl" data-aos="fade-right">
+          <h2 class="text-3xl font-bold mb-8">SEND A MESSAGE</h2>
+          <form class="space-y-6">
+            <div class="grid md:grid-cols-2 gap-6">
+              <div>
+                <label class="block text-sm font-bold mb-2 uppercase tracking-widest">Full Name</label>
+                <input class="input-field" placeholder="John Doe" type="text"/>
+              </div>
+              <div>
+                <label class="block text-sm font-bold mb-2 uppercase tracking-widest">Email Address</label>
+                <input class="input-field" placeholder="john@example.com" type="email"/>
+              </div>
+            </div>
+            <div>
+              <label class="block text-sm font-bold mb-2 uppercase tracking-widest">Interested Expedition</label>
+              <select class="input-field appearance-none">
+                <option>Patagonia Peaks</option>
+                <option>Swiss Summit</option>
+                <option>Icelandic Glow</option>
+                <option>Rocky Mountain High</option>
+                <option>Custom Expedition</option>
+              </select>
+            </div>
+            <div>
+              <label class="block text-sm font-bold mb-2 uppercase tracking-widest">Your Message</label>
+              <textarea class="input-field h-40" placeholder="Tell us about your experience level and what you're looking for..."></textarea>
+            </div>
+            <button class="w-full bg-orange text-white font-bold py-5 rounded-full text-lg shadow-lg hover:bg-primary transition-all transform hover:-translate-y-1" type="submit">SEND EXPEDITION REQUEST</button>
+          </form>
+        </div>
+
+        <!-- Info -->
+        <div class="flex flex-col justify-center" data-aos="fade-left">
+          <div class="space-y-12">
+            <div>
+              <h3 class="text-orange font-bold uppercase tracking-widest mb-4">Base Camp HQ</h3>
+              <p class="text-2xl font-bold">123 Adventure Way
+                <br/>
+Boulder, CO 80302
+              </p>
+            </div>
+            <div>
+              <h3 class="text-orange font-bold uppercase tracking-widest mb-4">Direct Lines</h3>
+              <p class="text-2xl font-bold">Toll Free: 1-800-VANTAGE
+                <br/>
+International: +1 303-555-0199
+              </p>
+            </div>
+            <div>
+              <h3 class="text-orange font-bold uppercase tracking-widest mb-4">Email Support</h3>
+              <p class="text-2xl font-bold">hello@vantageadventures.com
+                <br/>
+guides@vantageadventures.com
+              </p>
+            </div>
+            <div class="pt-8 border-t border-gray-200">
+              <h3 class="text-sm font-bold uppercase tracking-widest mb-6">Follow the Journey</h3>
+              <div class="flex gap-6">
+                <a class="w-12 h-12 bg-primary text-white rounded-full flex items-center justify-center hover:bg-orange transition-all" href="#">IG</a>
+                <a class="w-12 h-12 bg-primary text-white rounded-full flex items-center justify-center hover:bg-orange transition-all" href="#">FB</a>
+                <a class="w-12 h-12 bg-primary text-white rounded-full flex items-center justify-center hover:bg-orange transition-all" href="#">YT</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="bg-primary text-white pt-24 pb-12 relative overflow-hidden">
+
+      <!-- Decorative Mountain SVG -->
+      <div class="absolute top-0 left-0 w-full overflow-hidden leading-[0] transform rotate-180">
+        <svg class="relative block w-full h-[100px]" data-name="Layer 1" preserveaspectratio="none" viewbox="0 0 1200 120" xmlns="http://www.w3.org/2000/svg">
+          <path d="M1200 120L0 120 309.19 8.1c12.14-4.12 24.94-4.12 37.08 0L506.25 55.58c12.14 4.12 24.94 4.12 37.08 0L1200 120z" fill="#FDFBF7"></path>
+        </svg>
+      </div>
+      <div class="max-w-7xl mx-auto px-6 relative z-10">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-16 mb-20">
+          <div class="col-span-1 md:col-span-1">
+            <a class="flex items-center space-x-2 mb-8" href="index.html">
+              <div class="w-10 h-10 bg-accent rounded-lg flex items-center justify-center">
+                <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+                  <path d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+                </svg>
+              </div>
+              <span class="font-['Montserrat'] text-2xl font-bold tracking-tighter">VANTAGE</span>
+            </a>
+            <p class="text-white/70 leading-relaxed mb-8">
+              Curating soul-stirring outdoor experiences for the modern explorer. Leave no trace, take only memories.
+            </p>
+            <div class="flex space-x-4">
+              <a class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-accent transition-all" href="#">
+                <svg class="w-5 h-5" fill="currentColor" viewbox="0 0 24 24">
+                  <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"></path>
+                </svg>
+              </a>
+              <a class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-accent transition-all" href="#">
+                <svg class="w-5 h-5" fill="currentColor" viewbox="0 0 24 24">
+                  <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.058-1.69-.072-4.949-.072zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div>
+            <h4 class="font-['Montserrat'] font-bold mb-8">Quick Links</h4>
+            <ul class="space-y-4 text-white/60">
+              <li>
+                <a class="hover:text-accent transition-colors" href="tours.html">All Tours</a>
+              </li>
+              <li>
+                <a class="hover:text-accent transition-colors" href="destinations.html">Destinations</a>
+              </li>
+              <li>
+                <a class="hover:text-accent transition-colors" href="guides.html">Our Guides</a>
+              </li>
+              <li>
+                <a class="hover:text-accent transition-colors" href="safety.html">Safety First</a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="font-['Montserrat'] font-bold mb-8">Support</h4>
+            <ul class="space-y-4 text-white/60">
+              <li>
+                <a class="hover:text-accent transition-colors" href="contact.html">Contact Us</a>
+              </li>
+              <li>
+                <a class="hover:text-accent transition-colors" href="terms.html">Terms & Waivers</a>
+              </li>
+              <li>
+                <a class="hover:text-accent transition-colors" href="about.html">About Us</a>
+              </li>
+              <li>
+                <a class="hover:text-accent transition-colors" href="calendar.html">Trip Calendar</a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="font-['Montserrat'] font-bold mb-8">Newsletter</h4>
+            <p class="text-white/60 mb-6">Get adventure inspiration delivered to your inbox.</p>
+            <form class="flex">
+              <input class="bg-white/10 border-none rounded-l-lg px-4 py-2 w-full focus:ring-1 focus:ring-accent outline-none" placeholder="Email" type="email"/>
+              <button class="bg-accent px-4 py-2 rounded-r-lg hover:bg-[#e5533d] transition-colors">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+                  <path d="M14 5l7 7m0 0l-7 7m7-7H3" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+                </svg>
+              </button>
+            </form>
+          </div>
+        </div>
+        <div class="pt-12 border-t border-white/10 text-center text-white/40 text-sm">
+          <p>© 2024 VANTAGE ADVENTURES. All rights reserved. Designed for the wild.</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,44 @@
+/* version 1.1 */
+body {
+  background-color: #FDFBF7;
+  color: #2D5A27;
+}
+
+.text-orange {
+  color: #FF6347;
+}
+
+.bg-orange {
+  background-color: #FF6347;
+}
+
+.border-orange {
+  border-color: #FF6347;
+}
+
+.clip-mountain {
+  clip-path: polygon(0 15%, 50% 0, 100% 15%, 100% 100%, 0 100%);
+}
+
+.parallax {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.input-field {
+  width: 100%;
+  padding: 1rem 1.5rem;
+  background: white;
+  border: 2px solid rgba(45, 90, 39, 0.1);
+  border-radius: 1rem;
+  outline: none;
+  color: #2D5A27;
+  transition: all 0.3s ease;
+}
+
+.input-field:focus {
+  border-color: #FF6347;
+  box-shadow: 0 0 0 4px rgba(255, 99, 71, 0.1);
+}
