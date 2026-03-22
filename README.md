@@ -32,20 +32,20 @@
 > 📸 Add your screenshots inside the `images/screenshots/` folder and they will appear here automatically.
 
 ### 🏠 Homepage
-![Homepage](./images/screenshots/homepage.png)
+![Homepage](./images/homepage.png)
 
 ### 🗺️ Destinations
-![Destinations](./images/screenshots/destinations.png)
-![Destinations](./images/screenshots/destinations-2.png)
+![Destinations](./images/destinations.png)
+![Destinations](./images/destinations-2.png)
 
 ### 🧳 Tours
-![Tours](./images/screenshots/tours.png)
+![Tours](./images/tours.png)
 
 ### 📅 Calendar
-![Calendar](./images/screenshots/calendar.png)
+![Calendar](./images/calendar.png)
 
 ### 📞 Contact
-![Contact](./images/screenshots/contact.png)
+![Contact](./images/contact.png)
 
 ---
 
